@@ -1,0 +1,59 @@
+:root{
+  --bg:#fafafa;
+  --text:#222;
+  --card:#fff;
+}
+
+body.dark{
+  --bg:#0b1220;
+  --text:#e6eef8;
+  --card:#101829;
+}
+
+body{
+  background:var(--bg);
+  color:var(--text);
+  transition:0.3s;
+}
+
+.hero-section{
+  padding-top:120px;
+  padding-bottom:80px;
+}
+
+.skill-badge{
+  display:inline-block;
+  background:#eaeaea;
+  padding:8px 15px;
+  border-radius:20px;
+  margin:5px;
+}
+
+.project-card{
+  background:var(--card);
+  transition:0.2s;
+}
+.project-card:hover{
+  transform:translateY(-8px);
+  box-shadow:0 8px 20px rgba(0,0,0,0.1);
+}
+
+.form-error{
+  color:red;
+  display:none;
+}
+
+.theme-toggle{
+  cursor:pointer;
+}
+
+.reveal{
+  opacity:0;
+  transform:translateY(25px);
+  transition:0.6s;
+}
+.reveal.visible{
+  opacity:1;
+  transform:translateY(0);
+}
+
